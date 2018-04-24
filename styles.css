@@ -1,0 +1,136 @@
+
+
+body {
+  margin: 0 auto;
+  max-width: 540px;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.outer {
+  width: 100%;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+header h1, h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 3.5em;
+}
+
+header h2 {
+  margin-top: -0.6em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+/* RGB SQUARES */
+#rgb-squares {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+}
+
+.flex-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-one, .border-two, .border-three {
+  min-width: 5em;
+  min-height: 5em;
+}
+
+.border-one {
+  border: 4px solid rgb(255,0,0);
+  border-top-left-radius: 15px;
+  background-color: rgba(255,0,0,0.6);
+}
+
+.border-two {
+  border: 4px solid rgb(0,255,0);
+  background-color: rgba(0,255,0,0.6);
+}
+
+.border-three {
+  border: 4px solid rgb(0,0,255);
+  border-top-right-radius: 15px;
+  background-color: rgba(0,0,255,0.6);
+}
+
+.rgb-number {
+  font-size: 1.5em;
+  letter-spacing: .08em;
+}
+
+/* INPUT */
+#color-input {
+  margin: 0.5em 0;
+  padding: 1em;
+  background: rgb(232,232,232);
+}
+
+.col-r, .col-g, .col-b {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+
+.col-r {color:rgb(255,0,0);}
+.col-g {color:rgb(0,255,0);}
+.col-b {color:rgb(0,0,255);}
+
+/* COLOR SWATCH */
+#myRGB {
+  height: 12em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#myHex {
+  margin: 0;
+  padding: 0.1em;
+  font-size: 2em;
+  background-color: #fff;
+}
+
+/* RANDOM BUTTON */
+#myRand {
+  margin: 0.25em;
+  padding: 0.25em 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #6A8FA9;
+  border: 4px solid #6A8FA9;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.2));
+}
+
+#myRand:hover {
+/*   color: #33658A;
+  border: 4px solid #33658A; */
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2));
+}
+
+
+/*
+@media screen and (max-width: 600px) {
+  .color-box {
+    margin-top: 0.175em;
+  }
+}
+*/
